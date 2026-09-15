@@ -1,0 +1,40 @@
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 720, in _warm_feature_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 704, in _warm_collaboration_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/generated/interface/models.py", line 32317, in hydrate_crdt_from_proto
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/remote.py", line 749, in __call__
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/client.py", line 150, in call
+artifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.
+test_blacklist_is_case_insensitive (test_validator.RegistrationValidatorTests.test_blacklist_is_case_insensitive) ... ok
+test_confirmation_mismatch (test_validator.RegistrationValidatorTests.test_confirmation_mismatch) ... ok
+test_different_password_has_different_fingerprint (test_validator.RegistrationValidatorTests.test_different_password_has_different_fingerprint) ... ok
+test_email_login_is_valid (test_validator.RegistrationValidatorTests.test_email_login_is_valid) ... ok
+test_emoji_in_password (test_validator.RegistrationValidatorTests.test_emoji_in_password) ... ok
+test_empty_login (test_validator.RegistrationValidatorTests.test_empty_login) ... ok
+test_empty_password (test_validator.RegistrationValidatorTests.test_empty_password) ... ok
+test_fingerprint_does_not_reveal_password (test_validator.RegistrationValidatorTests.test_fingerprint_does_not_reveal_password) ... ok
+test_invalid_email_without_domain (test_validator.RegistrationValidatorTests.test_invalid_email_without_domain) ... ok
+test_invalid_email_without_dot (test_validator.RegistrationValidatorTests.test_invalid_email_without_dot) ... ok
+test_invalid_phone_too_short (test_validator.RegistrationValidatorTests.test_invalid_phone_too_short) ... ok
+test_invalid_phone_without_hyphens (test_validator.RegistrationValidatorTests.test_invalid_phone_without_hyphens) ... ok
+test_latin_character_in_password (test_validator.RegistrationValidatorTests.test_latin_character_in_password) ... ok
+test_no_digit (test_validator.RegistrationValidatorTests.test_no_digit) ... ok
+test_no_lowercase_letter (test_validator.RegistrationValidatorTests.test_no_lowercase_letter) ... ok
+test_no_special_character (test_validator.RegistrationValidatorTests.test_no_special_character) ... ok
+test_no_uppercase_letter (test_validator.RegistrationValidatorTests.test_no_uppercase_letter) ... ok
+test_phone_login_is_valid (test_validator.RegistrationValidatorTests.test_phone_login_is_valid) ... ok
+test_same_password_has_same_fingerprint (test_validator.RegistrationValidatorTests.test_same_password_has_same_fingerprint) ... ok
+test_short_password (test_validator.RegistrationValidatorTests.test_short_password) ... ok
+test_space_in_password (test_validator.RegistrationValidatorTests.test_space_in_password) ... ok
+test_string_login_is_valid (test_validator.RegistrationValidatorTests.test_string_login_is_valid) ... ok
+test_username_too_short (test_validator.RegistrationValidatorTests.test_username_too_short) ... ok
+test_username_with_cyrillic_is_invalid (test_validator.RegistrationValidatorTests.test_username_with_cyrillic_is_invalid) ... ok
+test_username_with_hyphen_is_invalid (test_validator.RegistrationValidatorTests.test_username_with_hyphen_is_invalid) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.001s
+
+OK
